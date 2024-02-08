@@ -1,8 +1,8 @@
-output_dir: null
+output_dir: /content/out
 
 dataset:
   name: cifar10
-  data_path: ./data/CIFAR10
+  data_path: /content/CiiV-Adversarial-Robustness.pytorch/data/CIFAR10
   img_size: 32
   rand_aug: false
 
