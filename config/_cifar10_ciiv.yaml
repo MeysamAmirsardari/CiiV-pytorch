@@ -2,7 +2,7 @@ output_dir: /content/out
 
 dataset:
   name: cifar10
-  data_path: /content/CiiV-Adversarial-Robustness.pytorch/data/CIFAR10
+  data_path: /content/CiiV-pytorch/data/CIFAR10
   img_size: 32
   rand_aug: false
 
@@ -22,7 +22,7 @@ attacker_opt:
   eot_iter: 1             # EOT version of attacker is applied when eot_iter > 1 
 
 training_opt:
-  num_epochs: 110
+  num_epochs: 10 #110
   batch_size: 128
   data_workers: 4
   optimizer: 'SGD'  # 'Adam' / 'SGD'

@@ -7,7 +7,7 @@ import attacker
 from train_baseline import train_baseline
 from train_mixup import train_mixup
 from train_ciiv import train_ciiv
-from train_ciiv_img import train_ciiv_img
+# from train_ciiv_img import train_ciiv_img
 from train_ciiv_mixup import train_ciiv_mixup
 from train_bpfc import train_bpfc
 
@@ -20,8 +20,8 @@ def get_train_func(config):
         training_func = train_mixup
     elif config['strategy']['train_type'] == 'ciiv':
         training_func = train_ciiv
-    elif config['strategy']['train_type'] == 'ciiv_img':
-        training_func = train_ciiv_img
+    # elif config['strategy']['train_type'] == 'ciiv_img':
+        # training_func = train_ciiv_img
     elif config['strategy']['train_type'] == 'ciiv_mixup':
         training_func = train_ciiv_mixup
     elif config['strategy']['train_type'] == 'bpfc':
